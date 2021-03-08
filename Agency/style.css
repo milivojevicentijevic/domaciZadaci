@@ -5,6 +5,7 @@
     --white: #fff;
     --transition: .4s ease;
     --gray: gray;
+    --mediGray: #ddd;
     --lightgray: #f8f8f8;
     --fontBody: 'Montserrat', sans-serif;
     --fontHeadings: 'Raleway', sans-serif;
@@ -293,6 +294,35 @@ gallery
     padding: 5px;
     opacity: .75;
     transform: translate(-50%, -50%);
+}
+/*********************
+contact
+*********************/
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact article:first-child {
+    flex: 0 0 58%;
+}
+.contact input, .contact textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    color: var(--mediGray);
+    border: 1px solid var(--mediGray);
+    font-size: 1rem;
+    font-family: var(--fontBody);
+}
+.contact article:last-child {
+    flex: 0 0 38%;
+}
+.contact article img {
+    width: 100%;
+    box-shadow: 0px 0px 30px var(--gray);
+    border-radius: 30px;
 }
 
 
