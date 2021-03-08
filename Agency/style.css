@@ -8,7 +8,11 @@
     --lightgray: #f8f8f8;
     --fontBody: 'Montserrat', sans-serif;
     --fontHeadings: 'Raleway', sans-serif;
+    --fontSize: 16px;
 }
+/*********************
+general style
+*********************/
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +20,17 @@
 }
 body {
     font-family: var(--fontBody);
+    font-size: var(--fontSize);
+    font-weight: 400;
+    line-height: 1.8;
+    background-color: var(--lightgray);
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--fontHeadings);
+}
+h1 {
+    font-weight: 900;
+}
+h2, h3, h4 {
+    font-weight: 700;
 }
