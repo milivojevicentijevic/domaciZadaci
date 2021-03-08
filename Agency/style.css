@@ -34,3 +34,69 @@ h1 {
 h2, h3, h4 {
     font-weight: 700;
 }
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+/*********************
+header
+*********************/
+header {
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px 0;
+}
+.logo {
+    color: var(--lightgray);
+    font-size: 2rem;
+}
+.logo span {
+    font-weight: 700;
+    font-style: italic;
+}
+header ul {
+    display: flex;
+}
+header ul li a {
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 1.2rem;
+    opacity: .8;
+    margin-left: 60px;
+    letter-spacing: 2px;
+}
+header ul li a:hover {
+    transition: var(--transition);
+    color: var(--white);
+    opacity: 1;
+}
+header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+header div h1 {
+    color: var(--lightgray);
+    font-size: 4rem;
+}
+header div h4 {
+    color: var(--lightgray);
+    font-size: 1.2rem;
+}
+header div p {
+    color: var(--lightgray);
+    font-size: 1.2rem;
+    font-style: italic;
+    padding-top: 15px;
+}
