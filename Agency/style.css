@@ -23,15 +23,10 @@ body {
     font-size: var(--fontSize);
     font-weight: 400;
     line-height: 1.8;
-    background-color: var(--lightgray);
+    background-color: var(--white);
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--fontHeadings);
-}
-h1 {
-    font-weight: 900;
-}
-h2, h3, h4 {
     font-weight: 700;
 }
 a {
@@ -39,6 +34,24 @@ a {
 }
 ul {
     list-style: none;
+}
+.container {
+    max-width: 90%;
+    margin: auto;
+    padding: 50px 0;
+}
+button {
+    padding: 15px 40px;
+    background-color: var(--white);
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: var(--fontSize);
+    border: 1px solid var(--black);
+}
+button:hover {
+    transition: var(--transition);
+    background-color: var(--black);  
+    color: var(--lightgray);
 }
 /*********************
 header
@@ -99,4 +112,41 @@ header div p {
     font-size: 1.2rem;
     font-style: italic;
     padding-top: 15px;
+}
+/*********************
+about
+*********************/
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.about article:first-child {
+    flex: 0 0 58%;
+}
+.about article h2 {
+    font-size: 3rem;
+    line-height: 2.5;
+}
+.about article h4 {
+    font-size: 1.2rem;
+}
+.about article hr {
+    border: none;
+    background-color: var(--pink);
+    height: 2px;
+    width: 200px;
+    margin: 20px 0 25px;
+}
+.about article p {
+    margin-bottom: 25px;
+}
+.about article:last-child {
+    flex: 0 0 38%;
+}
+.about article img {
+    width: 100%;
+    box-shadow: 0px 0px 30px var(--gray);
+    border-radius: 30px;
 }
