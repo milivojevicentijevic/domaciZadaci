@@ -53,6 +53,12 @@ button:hover {
     background-color: var(--black);  
     color: var(--lightgray);
 }
+hr {
+    border: none;
+    background-color: var(--black);
+    opacity: .5;
+    height: 2px;
+}
 /*********************
 header
 *********************/
@@ -149,4 +155,29 @@ about
     width: 100%;
     box-shadow: 0px 0px 30px var(--gray);
     border-radius: 30px;
+}
+/*********************
+numbers
+*********************/
+.numbers article {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.numbers div {
+    flex: 0 0 20%;
+    text-align: center;
+}
+.numbers h2 {
+    font-size: 3rem;
+}
+.numbers div hr {
+    border: none;
+    background-color: var(--black);
+    opacity: .5;
+    width: 65px;
+    margin: 25px auto;
+}
+.numbers h5 {
+    font-size: 1.1rem;
 }
