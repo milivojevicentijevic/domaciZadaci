@@ -133,20 +133,18 @@ about
 }
 .about article h2 {
     font-size: 3rem;
-    line-height: 2.5;
+    padding-bottom: 20px;
 }
 .about article h4 {
     font-size: 1.2rem;
 }
 .about article hr {
-    border: none;
     background-color: var(--pink);
-    height: 2px;
     width: 200px;
     margin: 20px 0 25px;
 }
 .about article p {
-    margin-bottom: 25px;
+   margin-bottom: 25px;
 }
 .about article:last-child {
     flex: 0 0 38%;
@@ -172,12 +170,57 @@ numbers
     font-size: 3rem;
 }
 .numbers div hr {
-    border: none;
-    background-color: var(--black);
-    opacity: .5;
     width: 65px;
     margin: 25px auto;
 }
 .numbers h5 {
     font-size: 1.1rem;
 }
+/*********************
+team
+*********************/
+.team article {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+.team article div:first-child {
+    flex: 0 0 30%;
+    display: flex;
+}
+.team div img {
+    width: 100%;
+}
+.team article div:last-child {
+    flex: 0 0 68%;
+}
+.team h4 {
+    font-size: 1.2rem;
+    position: relative;
+}
+.team h4:after {
+    content: "";
+    display: block;
+    width: 480px;
+    height: 2px;
+    background-color: var(--pink);
+    position: absolute;
+    left: -110px;
+    top: 48px;
+}
+.team p {
+    padding-top: 30px;
+}
+.team article:nth-child(odd) {
+    margin-left: auto;
+}
+.team article:nth-child(odd) div:last-child {
+    order: -1;
+    text-align: right;
+}
+.team article:nth-child(odd) h4:after {
+    left: 340px;
+}
+
+
