@@ -247,6 +247,53 @@ services
     color: var(--pink);
     font-size: 1.5rem;
 }
+/*********************
+gallery
+*********************/
+.gallery h2 {
+    font-size: 3rem;
+}
+.gallery h4 {
+    font-size: 1.2rem;
+}
+.gallery hr {
+    background-color: var(--pink);
+    width: 300px;
+    margin: 20px 0 25px;
+}
+.gallery article:last-child {
+    background-color: var(--lightgray);
+}
+.gallery article:last-child .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gallery article .holder {
+    flex: 0 0 23%;
+    padding-bottom: 40px;
+}
+.gallery article .holder .gallery-image{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.gallery article .holder img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gallery-image h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--white);
+    font-size: 1rem;
+    background-color: var(--pink);
+    padding: 5px;
+    opacity: .75;
+    transform: translate(-50%, -50%);
+}
 
 
 
