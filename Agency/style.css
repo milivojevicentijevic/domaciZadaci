@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Raleway:400,700');
+:root {
+    --pink: #f20f97;
+    --black: #000;
+    --white: #fff;
+    --transition: .4s ease;
+    --gray: gray;
+    --lightgray: #f8f8f8;
+    --fontBody: 'Montserrat', sans-serif;
+    --fontHeadings: 'Raleway', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--fontBody);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fontHeadings);
+}
