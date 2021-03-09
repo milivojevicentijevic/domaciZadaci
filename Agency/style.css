@@ -67,13 +67,13 @@ header {
     background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(img/header.jpg);
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    height: 91vh;
 }
-header nav {
+header .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 80px 0;
+    padding-top: 20px;
 }
 .logo {
     color: var(--lightgray);
@@ -203,11 +203,11 @@ team
 .team h4:after {
     content: "";
     display: block;
-    width: 480px;
+    width: 65%;
     height: 2px;
     background-color: var(--pink);
     position: absolute;
-    left: -110px;
+    left: -16%;
     top: 48px;
 }
 .team p {
@@ -221,7 +221,7 @@ team
     text-align: right;
 }
 .team article:nth-child(odd) h4:after {
-    left: 340px;
+    left: 52%;
 }
 /*********************
 services
@@ -332,10 +332,10 @@ footer .infos {
 }
 footer .infos h3 {
     color: var(--pink);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 footer .infos h5 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-top: 10px;
 }
 footer section:last-child {
