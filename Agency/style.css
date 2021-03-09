@@ -276,14 +276,21 @@ gallery
 }
 .gallery article .holder {
     flex: 0 0 23%;
-    padding-bottom: 40px;
-}
-.gallery article .holder .gallery-image{
-    height: 100%;
+    margin-bottom: 40px;
     overflow: hidden;
-    position: relative;
 }
-.gallery article .holder img{
+
+.gallery article .gallery-image{
+    height: 100%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.gallery article .gallery-image:hover {
+    transition: var(--transition);
+    transform: scale(1.1);
+}
+.gallery article img{
     height: 100%;
     width: 100%;
     object-fit: cover;
