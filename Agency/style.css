@@ -19,6 +19,9 @@ general style
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: var(--fontBody);
     font-size: var(--fontSize);
@@ -90,7 +93,7 @@ header ul li a {
     text-transform: uppercase;
     color: var(--white);
     font-size: 1.2rem;
-    opacity: .8;
+    opacity: .85;
     margin-left: 60px;
     letter-spacing: 2px;
 }
@@ -208,7 +211,7 @@ team
     background-color: var(--pink);
     position: absolute;
     left: -16%;
-    top: 48px;
+    top: 140%;
 }
 .team p {
     padding-top: 30px;
@@ -229,6 +232,7 @@ services
 .services article {
     display: flex;
     justify-content: space-between;
+    
 }
 .services article div {
     flex: 0 0 30%;  
@@ -350,14 +354,14 @@ footer article p i {
     color: var(--pink);
 }
 footer ul {
-    margin-right: 15%;
+    padding-right: 15%;
 }
 footer ul li {
     display: inline;
 }
 footer ul li a {
     font-size: 1.4rem;
-    margin-left: 40px;
+    padding: 0 22px;
     color: var(--pink);
     opacity: .8;
 }
@@ -366,6 +370,231 @@ footer ul li a:hover {
     color: var(--pink);
     opacity: 1;
 }
+
+/*********************
+responsive
+*********************/
+@media (max-width: 1190px) {
+    .logo {
+        font-size: 1.7rem;
+    }
+    .logo span {
+        font-weight: 400;
+    }
+    header ul li a {
+        font-size: 1.1rem;
+        margin-left: 45px;
+        letter-spacing: 1px;
+    }
+    header div h1 {
+        font-size: 3.6rem;
+    }
+    header div h4, header div p {
+        font-size: 1.1rem;
+    }
+    .about article:first-child {
+        flex: 0 0 56%;
+    }
+    .about article h2 {
+        font-size: 2.7rem;
+        padding-bottom: 15px;
+    }
+    .about article h4 {
+        font-size: 1.1rem;
+    }
+    .about article p {
+       margin-bottom: 22px;
+    }
+    .about article:last-child {
+        flex: 0 0 40%;
+    }
+    .numbers h2 {
+        font-size: 2.7rem;
+    }
+    .numbers div hr {
+        margin: 10px auto 14px;
+    }
+    .services article {
+        align-items: center;
+    }
+    .services article .first div,
+    .services article .third div {
+        padding-bottom: 8px;
+    }
+    .services h3 {
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+    .gallery h2 {
+        font-size: 2.7rem;
+    }
+}
+@media (max-width: 990px) {
+    .logo {
+        font-size: 1.6rem;
+        align-self: flex-start;
+    }
+    header .nav {
+        flex-direction: column;
+    }
+    header ul {
+        padding-top: 10px;
+    }
+    header div {
+        height: 60vh;
+    }
+    header div h1 {
+        font-size: 3rem;
+    }
+    .about article h2, .gallery h2 {
+        font-size: 2.4rem;
+    }
+    .gallery h4 {
+        font-size: 1.1rem;
+    }
+    .gallery article .holder {
+        flex: 0 0 47%;
+    }
+
+}
+@media (max-width: 768px) {
+    body {
+        line-height: 1.7;
+    }
+    header {
+        height: 100vh;
+    }
+    header .nav {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .logo {
+        font-size: 1.3rem;
+    }
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    header ul li {
+        padding-bottom: 5px;
+    }
+    header ul li a {
+        margin-left: 0;
+    }
+    header div {
+        align-items: flex-start;
+        padding-left: 10px;
+        height: 45vh;
+    }
+    header div h1 {
+        font-size: 2.7rem;
+        line-height: 1.3;
+    }
+    header div h4 {
+        padding-bottom: 15px;
+        font-weight: 400;
+    }
+    .about article:first-child {
+        flex: 0 0 100%;
+    }
+    .about article h2 {
+        padding-bottom: 18px;
+        line-height: 1.5;
+        font-size: 2.2rem;
+    }
+    .about article:last-child {
+        flex: 0 0 100%;
+        padding-top: 15px;
+    }
+    .numbers div {
+        flex: 0 0 40%;
+        text-align: center;
+    }
+    .numbers h2 {
+        font-size: 2.4rem;
+    }
+    .numbers div {
+        padding-bottom: 10px;
+    }
+    .numbers div hr {
+        width: 45px;
+        margin: 8px auto 12px;
+    }
+    .numbers h5 {
+        font-size: 1rem;
+    }
+    .team article {
+        width: 100%;
+        flex-direction: column;
+    }
+    .team article div:first-child {
+        flex: 0 0 100%;
+    }
+    .team div img {
+        padding-top: 20px;
+    }
+    .team article div:last-child {
+        flex: 0 0 100%;
+    }
+    .team h4 {
+        font-size: 1.3rem;
+    }
+    .team h4:after {
+        left: 0%;
+        top: 108%;
+        width: 40%;
+    }
+    .team p {
+        padding-top: 10px;
+    }
+    .team article:nth-child(odd) div:last-child {
+        order: 2;
+        text-align: left;
+    }
+    .team article:nth-child(odd) h4:after {
+        left: 0%;
+    }
+    .services article {
+        flex-direction: column; 
+    }
+    .services article .second {
+        padding: 10px 0;
+    }
+    .services article div {
+        flex: 0 0 100%;  
+    }
+    .services h3 {
+        font-size: 1.3rem;
+    }
+    .gallery hr {
+        width: 90%;
+        margin: 20px auto 0;
+    }
+    .gallery article .holder {
+        flex: 0 0 100%;
+    }
+    .gallery-image h5 {
+        font-size: 1.1rem;
+    }
+    .contact article:first-child {
+        flex: 0 0 100%;
+    }
+    .contact article:last-child {
+        flex: 0 0 100%;
+    }
+    button {
+        margin-bottom: 20px;
+    }
+    footer section:last-child article {
+        flex-direction: column;
+    }
+    footer ul {
+        padding-right: 0;
+        padding-top: 20px;
+    }
+
+}
+
 
 
 
