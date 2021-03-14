@@ -191,6 +191,9 @@ products
         }
     }
 }
+/*****************
+shop
+*****************/
 .shop {
     background-color: $lightGray;
     padding: $padding;
@@ -224,6 +227,24 @@ products
                     margin: 0 auto 40px;
                 }
             }
+        }
+    }
+}
+/*****************
+footer
+*****************/
+footer {
+    padding: $padding;
+    text-align: center;
+    color: $white;
+    background-color: $gray;
+    a {
+        display: inline-block;
+        padding: 10px;
+        i {
+            padding: 10px;
+            background-color: $orange;
+            color: $white;
         }
     }
 }

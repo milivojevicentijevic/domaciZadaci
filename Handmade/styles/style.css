@@ -298,6 +298,9 @@ products
   }
 }
 
+/*****************
+shop
+*****************/
 .shop {
   background-color: #f5f5f5;
   padding: 70px 0;
@@ -383,5 +386,26 @@ products
   .shop article div button {
     margin: 0 auto 40px;
   }
+}
+
+/*****************
+footer
+*****************/
+footer {
+  padding: 70px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #515151;
+}
+
+footer a {
+  display: inline-block;
+  padding: 10px;
+}
+
+footer a i {
+  padding: 10px;
+  background-color: #ff8a0e;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
