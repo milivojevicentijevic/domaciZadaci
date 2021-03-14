@@ -32,6 +32,10 @@ ul {
   list-style: none;
 }
 
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
 /*****************
 header
 *****************/
@@ -166,5 +170,29 @@ header div {
     bottom: -10px;
     height: 10px;
   }
+}
+
+/*****************
+about
+*****************/
+.about {
+  padding: 70px 0;
+  background-color: #f5f5f5;
+}
+
+.about article {
+  text-align: center;
+}
+
+.about article h2 {
+  font-size: 2.8rem;
+}
+
+.about article hr {
+  border: none;
+  background-color: #ff8a0e;
+  height: 3px;
+  width: 80px;
+  margin: 20px auto 30px;
 }
 /*# sourceMappingURL=style.css.map */
