@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
@@ -20,7 +24,7 @@ body {
 
 @media (max-width: 767px) {
   .container {
-    width: 90%;
+    width: 75%;
   }
 }
 
@@ -64,6 +68,7 @@ header nav {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 58vh;
+  padding-left: 10%;
 }
 
 @media (max-width: 767px) {
@@ -84,6 +89,7 @@ header nav {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 54vh;
+    padding-left: 5%;
   }
 }
 
@@ -118,14 +124,14 @@ header nav ul {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 10px 0;
-  width: 41%;
+  width: 36%;
   background-color: #ff8a0e;
   margin-top: 10px;
 }
 
 @media (max-width: 767px) {
   header nav ul {
-    width: 98%;
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
