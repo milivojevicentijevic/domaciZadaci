@@ -161,6 +161,10 @@ products
     text-align: center;
     h3 {
         font-size: 2rem;
+        @media (max-width: 767px) {
+            font-size: 1.8rem;
+            line-height: 1.4;
+        }
     }
     hr {
         @include hr;
@@ -169,6 +173,9 @@ products
         @include flex( space-between, center, row);
         div {
             flex: 0 0 31%;
+            @media (max-width: 767px) {
+                flex: 0 0 100%;
+            }
             h4 {
                 font-size: 1.6rem;
             }
@@ -177,6 +184,9 @@ products
             }
             button {
                 @include btn;
+                @media (max-width: 767px) {
+                    margin: 0 auto 40px;
+                }
             }
         }
     }

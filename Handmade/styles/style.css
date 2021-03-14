@@ -219,6 +219,13 @@ products
   font-size: 2rem;
 }
 
+@media (max-width: 767px) {
+  .products h3 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+}
+
 .products hr {
   border: none;
   background-color: #ff8a0e;
@@ -251,6 +258,14 @@ products
           flex: 0 0 31%;
 }
 
+@media (max-width: 767px) {
+  .products article div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
 .products article div h4 {
   font-size: 1.6rem;
 }
@@ -275,5 +290,11 @@ products
 
 .products article div button:hover {
   background-color: #515151;
+}
+
+@media (max-width: 767px) {
+  .products article div button {
+    margin: 0 auto 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
