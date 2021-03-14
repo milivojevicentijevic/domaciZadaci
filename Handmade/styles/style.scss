@@ -45,6 +45,28 @@ h1, h2, h3, h4, h5 {
     align-items: $align;
     flex-direction: $direction;
 }
+@mixin hr {
+    border: none;
+    background-color: $orange;
+    height: 3px;
+    width: 80px;
+    margin: 20px auto;
+}
+@mixin btn {
+    padding: 15px 55px;
+    background-color: $orange;
+    color: $white;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: $transition;
+    &:hover {
+        background-color: $gray;
+    }
+}
 /*****************
 header
 *****************/
@@ -124,11 +146,38 @@ about
             }
         }
         hr {
-            border: none;
-            background-color: $orange;
-            height: 3px;
-            width: 80px;
-            margin: 20px auto 30px;
+            @include hr;
+        }
+        p {
+            padding-top: 20px;
+        }
+    }
+}
+/*****************
+products
+*****************/
+.products {
+    padding: $padding;
+    text-align: center;
+    h3 {
+        font-size: 2rem;
+    }
+    hr {
+        @include hr;
+    }
+    article {
+        @include flex( space-between, center, row);
+        div {
+            flex: 0 0 31%;
+            h4 {
+                font-size: 1.6rem;
+            }
+            p {
+                padding: 20px 0;
+            }
+            button {
+                @include btn;
+            }
         }
     }
 }
