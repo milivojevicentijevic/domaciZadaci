@@ -297,4 +297,77 @@ products
     margin: 0 auto 40px;
   }
 }
+
+.shop {
+  background-color: #f5f5f5;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.shop h3 {
+  font-size: 2rem;
+}
+
+.shop hr {
+  border: none;
+  background-color: #ff8a0e;
+  height: 3px;
+  width: 80px;
+  margin: 20px auto;
+}
+
+.shop article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.shop article div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 22%;
+          flex: 0 0 22%;
+}
+
+.shop article div img {
+  width: 100%;
+  margin: 30px 0 20px;
+}
+
+.shop article div h4 {
+  font-size: 1.6rem;
+}
+
+.shop article div p {
+  padding: 20px 0;
+}
+
+.shop article div button {
+  padding: 15px 55px;
+  background-color: #ff8a0e;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin-top: 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.shop article div button:hover {
+  background-color: #515151;
+}
 /*# sourceMappingURL=style.css.map */
