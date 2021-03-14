@@ -5,6 +5,7 @@ $lineHeight: 1.7;
 $gray: #333333;
 $darkGray: #2e2e2e;
 $yellow: #f3cd52;
+$lightYellow: #fae9ba;
 $white: #fff;
 $transition: .4s ease;
 $lightgray: rgba(255,255,255,.4);
@@ -18,4 +19,71 @@ body {
     font-size: $fontSize;
     line-height: $lineHeight;
     background-color: $gray;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container {
+    max-width: 70%;
+    margin: auto;
+}
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+/***********************************
+h e a d e r 
+***********************************/
+header {
+    background-color: $yellow;
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: $yellow;
+        opacity: .99;
+        ul {
+            @include flex(center, center, row);
+            margin: 30px auto;
+            li {
+                a {
+                    text-transform: uppercase;
+                    color: $darkGray;
+                    letter-spacing: 2px;
+                    padding: 30px 45px;
+                    transition: $transition;
+                    font-weight: 500;
+                    &:hover {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    div {
+        @include flex(center, space-between, column);
+        padding-top: 120px;
+        text-align: center;
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 3px;
+        }
+        p {
+            text-transform: uppercase;
+            padding: 15px;
+        }
+        img {
+            margin-top: 50px;
+            width: 100%;
+            border: 30px solid $lightYellow;
+            border-bottom: none;
+        }
+    }
 }
