@@ -25,6 +25,9 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
+    @media (max-width: 767px) {
+        width: 90%;
+    }
 }
 a {
     text-decoration: none;
@@ -51,12 +54,19 @@ header {
     nav {
         @include flex( center, flex-start, column);
         height: 58vh;
+        @media (max-width: 767px) {
+            @include flex( flex-end, flex-start, column);
+            height: 54vh;
+        }
         .logo {
             font-size: 2.8rem;
             font-weight: 700;
             color: $white;
             background-color: $black;
             padding: 15px 50px;
+            @media (max-width: 767px) {
+                font-size: 2rem;
+            }
         }
         ul {
             @include flex( space-evenly, center, row);
@@ -64,6 +74,10 @@ header {
             width: 41%;
             background-color: $orange;
             margin-top: 10px;
+            @media (max-width: 767px) {
+                width: 98%;
+                @include flex( space-around, center, row);
+            }
             li {
                 a {
                     color: $white;
@@ -82,9 +96,15 @@ header {
         left: 0%;
         right: 0%;
         height: 20px;
-        background-color: black;
+        background-color: $black;
         opacity: .5;
+        @media (max-width: 767px) {
+            background-color: $gray;
+            bottom: -10px;
+            height: 10px;
+        }
     }
+    
     
 }
 
