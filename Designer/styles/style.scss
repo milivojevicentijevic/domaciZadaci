@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Pontano+Sans&display=swap');
+$fontFamily: 'Pontano Sans', sans-serif;
+$fontSize: 16px;
+$lineHeight: 1.7;
+$gray: #333333;
+$darkGray: #2e2e2e;
+$yellow: #f3cd52;
+$white: #fff;
+$transition: .4s ease;
+$lightgray: rgba(255,255,255,.4);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    background-color: $gray;
+}
