@@ -29,6 +29,9 @@ ul {
 .container {
     max-width: 70%;
     margin: auto;
+    @media (max-width: 767px) {
+        max-width: 90%;
+    }
 }
 @mixin flex($justify, $align, $direction) {
     display: flex;
@@ -52,6 +55,9 @@ header {
         ul {
             @include flex(center, center, row);
             margin: 30px auto;
+            @media (max-width: 767px) {
+                margin: 30px auto 15px;
+            }
             li {
                 a {
                     text-transform: uppercase;
@@ -60,6 +66,10 @@ header {
                     padding: 30px 45px;
                     transition: $transition;
                     font-weight: 500;
+                    @media (max-width: 767px) {
+                        padding: 30px 5px;
+                        letter-spacing: 0px;
+                    }
                     &:hover {
                         font-weight: 700;
                     }
@@ -71,9 +81,16 @@ header {
         @include flex(center, space-between, column);
         padding-top: 120px;
         text-align: center;
+        @media (max-width: 767px) {
+            padding-top: 90px;
+        }
         h1 {
             font-size: 3rem;
             letter-spacing: 3px;
+            @media (max-width: 767px) {
+                font-size: 2rem;
+                letter-spacing: 2px;
+            }
         }
         p {
             text-transform: uppercase;
@@ -84,6 +101,10 @@ header {
             width: 100%;
             border: 30px solid $lightYellow;
             border-bottom: none;
+            @media (max-width: 767px) {
+                margin-top: 10px;
+                border: 15px solid $lightYellow;
+            }
         }
     }
 }
