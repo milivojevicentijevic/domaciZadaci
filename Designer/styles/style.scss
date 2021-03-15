@@ -39,6 +39,16 @@ ul {
         max-width: 80%;
     }
 }
+hr {
+    border: none;
+    background-color: $lightGray;
+    height: 1px;
+}
+h2 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    padding-top: 60px;
+}
 @mixin flex($justify, $align, $direction) {
     display: flex;
     flex-wrap: wrap;
@@ -62,16 +72,6 @@ ul {
     &:hover {
         background-color: $lightYellow;
     }
-}
-@mixin hr {
-    border: none;
-    background-color: $lightGray;
-    height: 1px;
-}
-@mixin h2 {
-    font-size: 3rem;
-    letter-spacing: 3px;
-    padding-top: 60px;
 }
 /***********************************
 h e a d e r 
@@ -171,12 +171,6 @@ p o r t f o l i o
 ***********************************/
 .portfolio {
     text-align: center;
-    hr {
-        @include hr;
-    }
-    h2 {
-        @include h2;
-    }
     p {
         padding: 20px 0;
     }
@@ -209,12 +203,6 @@ b l o g
 ***********************************/
 .blog {
     text-align: center;
-    hr {
-        @include hr;
-    }
-    h2 {
-        @include h2;
-    }
     p {
         padding: 20px 0;
     }
@@ -260,6 +248,9 @@ b l o g
                     &:hover {
                         background-color: $yellow;
                     }
+                    &:active {
+                        background-color: $lightYellow;
+                    }
                 }
             }
             img {
@@ -268,7 +259,54 @@ b l o g
             h4, p, button {
                 display: none;
             }
-            
+        }
+    }
+}
+/***********************************
+c o n t a c t
+***********************************/
+.contact {
+    text-align: center;
+    p {
+        padding: 20px 0;
+    }
+    div {
+        width: 60%;
+        margin: auto;
+        @include flex(center, space-between, column);
+        input {
+            padding: 20px;
+            font-size: 1.2rem;
+            margin-top: 15px;
+            background-color: $darkGray;
+            border: none;
+        }
+        textarea {
+            margin: 15px 0;
+            background-color: $darkGray;
+            border: none;
+            padding: 20px;
+            font-size: 1.2rem;
+            font-family: $fontFamily;
+        }
+    }
+    button {
+        @include btn;
+        margin-bottom: 0;
+    }
+    ul {
+        margin: 20px auto 70px;
+        li {
+            display: inline-block;
+            a {
+                padding: 20px;
+                font-size: 1.4rem;
+                i {
+                    padding: 20px;
+                    background-color: $yellow;
+                    color: $darkGray;
+                }
+            }
         }
     }
 }
