@@ -8,7 +8,9 @@ $yellow: #f3cd52;
 $lightYellow: #fae9ba;
 $white: #fff;
 $transition: .4s ease;
-$lightgray: rgba(255,255,255,.4);
+$lightGray: rgba(255,255,255,.4);
+$black: #000;
+$padding: 50px 0;
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,6 +21,10 @@ body {
     font-size: $fontSize;
     line-height: $lineHeight;
     background-color: $gray;
+    color: $lightGray;
+}
+h2, h3, h4 {
+    color: $white;
 }
 a {
     text-decoration: none;
@@ -39,6 +45,22 @@ ul {
     justify-content: $justify;
     align-items: $align;
     flex-direction: $direction;
+}
+@mixin btn {
+    padding: 15px 30px;
+    background-color: $yellow;
+    color: $darkGray;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: $transition;
+    margin-bottom: 50px;
+    &:hover {
+        background-color: $lightYellow;
+    }
 }
 /***********************************
 h e a d e r 
@@ -81,6 +103,7 @@ header {
         @include flex(center, space-between, column);
         padding-top: 120px;
         text-align: center;
+        color: $black;
         @media (max-width: 767px) {
             padding-top: 90px;
         }
@@ -108,3 +131,24 @@ header {
         }
     }
 }
+/***********************************
+a b o u t
+***********************************/
+.about {
+    padding: $padding;
+    @include flex(space-between, center, row);
+    article {
+        flex: 0 0 30%;
+        text-align: center;
+        h3 {
+            font-size: 2rem;
+        }
+        p {
+            padding: 30px 0;
+        }
+        button {
+            @include btn;
+        }
+    }
+}
+
