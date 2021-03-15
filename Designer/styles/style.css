@@ -33,7 +33,7 @@ ul {
 
 @media (max-width: 767px) {
   .container {
-    max-width: 90%;
+    max-width: 80%;
   }
 }
 
@@ -74,7 +74,7 @@ header nav ul {
 
 @media (max-width: 767px) {
   header nav ul {
-    margin: 30px auto 15px;
+    margin: 20px auto 15px;
   }
 }
 
@@ -118,11 +118,12 @@ header div {
   padding-top: 120px;
   text-align: center;
   color: #000;
+  padding-left: 15%;
 }
 
 @media (max-width: 767px) {
   header div {
-    padding-top: 90px;
+    padding: 90px 20px 0;
   }
 }
 
@@ -268,6 +269,14 @@ p o r t f o l i o
       -ms-flex: 0 0 23%;
           flex: 0 0 23%;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .portfolio article div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .portfolio article div img {
