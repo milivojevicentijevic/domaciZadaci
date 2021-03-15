@@ -140,6 +140,9 @@ a b o u t
     article {
         flex: 0 0 30%;
         text-align: center;
+        @media (max-width: 767px) {
+            flex: 0 0 100%;
+        }
         h3 {
             font-size: 2rem;
         }
