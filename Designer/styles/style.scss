@@ -116,6 +116,7 @@ header {
         text-align: center;
         color: $black;
         padding-left: 15%;
+        padding-right: 15%;
         @media (max-width: 767px) {
             padding: 90px 20px 0;
         }
@@ -212,9 +213,9 @@ b l o g
         div {
             flex: 0 0 31%;
             position: relative;
+            margin-bottom: 50px;
             @media (max-width: 767px) {
                 flex: 0 0 100%;
-                margin-bottom: 50px;
             }
             &:hover {
                 img {
@@ -268,12 +269,15 @@ c o n t a c t
 .contact {
     text-align: center;
     p {
-        padding: 20px 0;
+        padding: 20px;
     }
     div {
         width: 60%;
         margin: auto;
         @include flex(center, space-between, column);
+        @media (max-width: 767px) {
+            width: 100%;
+        }
         input {
             padding: 20px;
             font-size: 1.2rem;
@@ -301,6 +305,9 @@ c o n t a c t
             a {
                 padding: 20px;
                 font-size: 1.4rem;
+                @media (max-width: 767px) {
+                    padding: 10px;
+                }
                 i {
                     padding: 20px;
                     background-color: $yellow;

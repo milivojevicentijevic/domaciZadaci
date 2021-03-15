@@ -131,6 +131,7 @@ header div {
   text-align: center;
   color: #000;
   padding-left: 15%;
+  padding-right: 15%;
 }
 
 @media (max-width: 767px) {
@@ -347,6 +348,7 @@ b l o g
       -ms-flex: 0 0 31%;
           flex: 0 0 31%;
   position: relative;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 767px) {
@@ -354,7 +356,6 @@ b l o g
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
-    margin-bottom: 50px;
   }
 }
 
@@ -433,7 +434,7 @@ c o n t a c t
 }
 
 .contact p {
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .contact div {
@@ -454,6 +455,12 @@ c o n t a c t
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .contact div {
+    width: 100%;
+  }
 }
 
 .contact div input {
@@ -505,6 +512,12 @@ c o n t a c t
 .contact ul li a {
   padding: 20px;
   font-size: 1.4rem;
+}
+
+@media (max-width: 767px) {
+  .contact ul li a {
+    padding: 10px;
+  }
 }
 
 .contact ul li a i {
