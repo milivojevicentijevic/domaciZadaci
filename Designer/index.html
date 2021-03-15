@@ -125,8 +125,10 @@
     <!-- footer -->
     <footer>
         <p>&copy; 2020. Made by webcon.rs</p>
+        <button id="toTheTop" title="Top"><i class="fas fa-arrow-up"></i></button>
     </footer>
 <script>
+    var toTheTop = document.querySelector("#toTheTop");
     window.onscroll = function() {
         var scrollPos = window.pageYOffset;
         if (scrollPos === 0) {
@@ -134,7 +136,17 @@
         } else {
             document.querySelector("nav").style.top = "-90px";
         }
+
+        if (document.documentElement.scrollTop > 300) {
+            toTheTop.style.display = "block";
+        } else {
+            toTheTop.style.display = "none";
+        }
     }
+    toTheTop.addEventListener('click', () => {
+        document.documentElement.scrollTop = 0;
+    });
+
 </script>
 </body>
 </html>

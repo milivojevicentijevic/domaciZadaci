@@ -76,6 +76,26 @@ h2 {
         background-color: $lightYellow;
     }
 }
+#toTheTop {
+    @include btn;
+    padding: 10px 15px;
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    right: 30px;
+    z-index: 9;
+    box-shadow: 0 0 5px $black;
+    font-size: 1.2rem;
+    &:hover {
+        transform: translateY(-5px);
+    }
+    @media (max-width: 767px) {
+        font-size: 1rem;
+        right: 20px;
+        bottom: -20px;
+    }
+  }
+
 /***********************************
 h e a d e r 
 ***********************************/
@@ -93,7 +113,7 @@ header {
             @include flex(center, center, row);
             margin: 30px auto;
             @media (max-width: 767px) {
-                margin: 20px auto 15px;
+                margin: 30px auto 15px;
             }
             li {
                 a {
@@ -276,7 +296,7 @@ c o n t a c t
         padding: 20px;
     }
     div {
-        width: 60%;
+        width: 40%;
         margin: auto;
         @include flex(center, space-between, column);
         @media (max-width: 767px) {

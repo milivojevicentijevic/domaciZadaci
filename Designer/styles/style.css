@@ -53,6 +53,48 @@ h2 {
   padding-top: 60px;
 }
 
+#toTheTop {
+  padding: 15px 30px;
+  background-color: #f3cd52;
+  color: #2e2e2e;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 1rem;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  margin-bottom: 60px;
+  outline: none;
+  padding: 10px 15px;
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  right: 30px;
+  z-index: 9;
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+  font-size: 1.2rem;
+}
+
+#toTheTop:hover {
+  background-color: #fae9ba;
+}
+
+#toTheTop:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+@media (max-width: 767px) {
+  #toTheTop {
+    font-size: 1rem;
+    right: 20px;
+    bottom: -20px;
+  }
+}
+
 /***********************************
 h e a d e r 
 ***********************************/
@@ -92,7 +134,7 @@ header nav ul {
 
 @media (max-width: 767px) {
   header nav ul {
-    margin: 20px auto 15px;
+    margin: 30px auto 15px;
   }
 }
 
@@ -444,7 +486,7 @@ c o n t a c t
 }
 
 .contact div {
-  width: 60%;
+  width: 40%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
