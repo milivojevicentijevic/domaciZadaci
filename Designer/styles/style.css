@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Pontano+Sans&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -58,11 +62,13 @@ header {
 
 header nav {
   position: fixed;
+  display: block;
   top: 0;
   left: 0;
   right: 0;
   background-color: #f3cd52;
-  opacity: .99;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
 }
 
 header nav ul {
@@ -476,7 +482,7 @@ c o n t a c t
   background-color: #2e2e2e;
   border: none;
   padding: 20px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-family: "Pontano Sans", sans-serif;
 }
 
@@ -505,6 +511,25 @@ c o n t a c t
   margin: 20px auto 70px;
 }
 
+@media (max-width: 767px) {
+  .contact ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .contact ul li {
   display: inline-block;
 }
@@ -516,7 +541,7 @@ c o n t a c t
 
 @media (max-width: 767px) {
   .contact ul li a {
-    padding: 10px;
+    padding: 0;
   }
 }
 
@@ -524,5 +549,13 @@ c o n t a c t
   padding: 20px;
   background-color: #f3cd52;
   color: #2e2e2e;
+}
+
+/***********************************
+f o o t e r
+***********************************/
+footer {
+  padding: 50px 0;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

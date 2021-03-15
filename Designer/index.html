@@ -13,10 +13,10 @@
         <nav>
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div>
@@ -26,7 +26,7 @@
         </div> 
     </header>
     <!-- about -->
-    <section class="about container">
+    <section class="about container" id="about">
         <article>
             <h3>Graphic design</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi praesentium deserunt voluptates repellat quaerat hic harum saepe magni asperiores commodi ullam, culpa dicta optio sunt vero expedita perspiciatis laboriosam iste? Sint corrupti in fuga nulla eonos possimus totam veniam eaque commodi vero.</p>
@@ -44,7 +44,7 @@
         </article>
     </section>
     <!-- portfolio -->
-    <section class="portfolio container">
+    <section class="portfolio container" id="portfolio">
         <hr>
         <h2>My portfolio</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quos, ad asperiores suscipit dignissimos sed earum porro iste veniam exercitationem.</p>
@@ -76,7 +76,7 @@
         </article>
     </section>
     <!-- blog -->
-    <section class="blog container">
+    <section class="blog container" id="blog">
         <hr>
         <h2>My blog</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolores nulla doloribus commodi voluptates placeat!</p>
@@ -103,14 +103,13 @@
         <hr>
     </section>
     <!-- contact -->
-    <section class="contact">
-        
+    <section class="contact" id="contact">
         <h2>Contact</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex ab, temporibus sunt aspernatur delectus autem sint ipsam blanditiis vitae suscipit.</p>
         <div class="container">
             <input type="text" placeholder="Name">
             <input type="text" placeholder="Email">
-            <textarea rows="10" placeholder="Message"></textarea>
+            <textarea rows="9" placeholder="Message"></textarea>
         </div>
         <button>Send Message</button>
         <h2>Get in touch</h2>
@@ -121,7 +120,21 @@
             <li><a href=""><i class="fab fa-twitter"></i></a></li>
             <li><a href=""><i class="fab fa-youtube"></i></a></li>
         </ul>
-        <hr>
+        <hr class="container">
     </section>
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2020. Made by webcon.rs</p>
+    </footer>
+<script>
+    window.onscroll = function() {
+        var scrollPos = window.pageYOffset;
+        if (scrollPos === 0) {
+            document.querySelector("nav").style.top = "0";
+        } else {
+            document.querySelector("nav").style.top = "-90px";
+        }
+    }
+</script>
 </body>
 </html>
