@@ -57,10 +57,20 @@ ul {
     font-weight: 500;
     font-size: 1rem;
     transition: $transition;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     &:hover {
         background-color: $lightYellow;
     }
+}
+@mixin hr {
+    border: none;
+    background-color: $lightGray;
+    height: 1px;
+}
+@mixin h2 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    padding-top: 60px;
 }
 /***********************************
 h e a d e r 
@@ -154,4 +164,38 @@ a b o u t
         }
     }
 }
-
+/***********************************
+p o r t f o l i o
+***********************************/
+.portfolio {
+    text-align: center;
+    hr {
+        @include hr;
+    }
+    h2 {
+        @include h2;
+    }
+    p {
+        padding: 20px 0;
+    }
+    article {
+        padding: $padding;
+        @include flex(space-between, center, row);
+        div {
+            flex: 0 0 23%;
+            text-align: center;
+            img {
+                width: 100%;
+            }
+            h4 {
+                font-size: 1.7rem;
+            }
+            p {
+                padding: 5px 0 30px;
+            }
+            button {
+                @include btn;
+            }
+        }
+    }
+}

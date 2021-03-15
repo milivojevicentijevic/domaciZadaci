@@ -214,10 +214,90 @@ a b o u t
   font-size: 1rem;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .about article button:hover {
+  background-color: #fae9ba;
+}
+
+/***********************************
+p o r t f o l i o
+***********************************/
+.portfolio {
+  text-align: center;
+}
+
+.portfolio hr {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 1px;
+}
+
+.portfolio h2 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  padding-top: 60px;
+}
+
+.portfolio p {
+  padding: 20px 0;
+}
+
+.portfolio article {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.portfolio article div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 23%;
+          flex: 0 0 23%;
+  text-align: center;
+}
+
+.portfolio article div img {
+  width: 100%;
+}
+
+.portfolio article div h4 {
+  font-size: 1.7rem;
+}
+
+.portfolio article div p {
+  padding: 5px 0 30px;
+}
+
+.portfolio article div button {
+  padding: 15px 30px;
+  background-color: #f3cd52;
+  color: #2e2e2e;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 1rem;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  margin-bottom: 60px;
+}
+
+.portfolio article div button:hover {
   background-color: #fae9ba;
 }
 /*# sourceMappingURL=style.css.map */
