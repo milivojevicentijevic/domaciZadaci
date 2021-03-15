@@ -58,6 +58,7 @@ ul {
     font-size: 1rem;
     transition: $transition;
     margin-bottom: 60px;
+    outline: none;
     &:hover {
         background-color: $lightYellow;
     }
@@ -200,6 +201,70 @@ p o r t f o l i o
             button {
                 @include btn;
             }
+        }
+    }
+}
+/***********************************
+b l o g
+***********************************/
+.blog {
+    text-align: center;
+    hr {
+        @include hr;
+    }
+    h2 {
+        @include h2;
+    }
+    p {
+        padding: 20px 0;
+    }
+    article {
+        padding: $padding;
+        @include flex(space-between, center, row);
+        div {
+            flex: 0 0 31%;
+            position: relative;
+            &:hover {
+                img {
+                    transition: $transition;
+                    opacity: .4;
+                }
+                h4, p, button {
+                    display: block;
+                    position: absolute;
+                    left: 5%;
+                }
+                h4 {
+                    top: 2%;
+                    font-size: 1.6rem;
+                    text-shadow: 0 0 5px $black;
+                }
+                p {
+                    top: 10%;
+                    right: 5%;
+                    text-align: left;
+                    line-height: 1.6;
+                    color: $white;
+                    text-shadow: 0 0 5px $black;
+                }
+                button {
+                    top: 71%;
+                    @include btn;
+                    font-size: .9rem;
+                    padding: 14px 24px;
+                    margin-bottom: 0;
+                    &:hover {
+                        background-color: $yellow;
+                    }
+                }
+            }
+            img {
+                width: 100%;
+            }
+            h4, p, button {
+                display: none;
+            }
+            
         }
     }
 }

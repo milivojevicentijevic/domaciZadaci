@@ -216,6 +216,7 @@ a b o u t
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   margin-bottom: 60px;
+  outline: none;
 }
 
 .about article button:hover {
@@ -304,9 +305,122 @@ p o r t f o l i o
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   margin-bottom: 60px;
+  outline: none;
 }
 
 .portfolio article div button:hover {
   background-color: #fae9ba;
+}
+
+/***********************************
+b l o g
+***********************************/
+.blog {
+  text-align: center;
+}
+
+.blog hr {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 1px;
+}
+
+.blog h2 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  padding-top: 60px;
+}
+
+.blog p {
+  padding: 20px 0;
+}
+
+.blog article {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.blog article div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 31%;
+          flex: 0 0 31%;
+  position: relative;
+}
+
+.blog article div:hover img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  opacity: .4;
+}
+
+.blog article div:hover h4, .blog article div:hover p, .blog article div:hover button {
+  display: block;
+  position: absolute;
+  left: 5%;
+}
+
+.blog article div:hover h4 {
+  top: 2%;
+  font-size: 1.6rem;
+  text-shadow: 0 0 5px #000;
+}
+
+.blog article div:hover p {
+  top: 10%;
+  right: 5%;
+  text-align: left;
+  line-height: 1.6;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+.blog article div:hover button {
+  top: 71%;
+  padding: 15px 30px;
+  background-color: #f3cd52;
+  color: #2e2e2e;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 1rem;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  margin-bottom: 60px;
+  outline: none;
+  font-size: .9rem;
+  padding: 14px 24px;
+  margin-bottom: 0;
+}
+
+.blog article div:hover button:hover {
+  background-color: #fae9ba;
+}
+
+.blog article div:hover button:hover {
+  background-color: #f3cd52;
+}
+
+.blog article div img {
+  width: 100%;
+}
+
+.blog article div h4, .blog article div p, .blog article div button {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
