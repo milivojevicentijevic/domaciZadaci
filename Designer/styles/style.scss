@@ -224,6 +224,10 @@ b l o g
         div {
             flex: 0 0 31%;
             position: relative;
+            @media (max-width: 767px) {
+                flex: 0 0 100%;
+                margin-bottom: 50px;
+            }
             &:hover {
                 img {
                     transition: $transition;
